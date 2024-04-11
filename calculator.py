@@ -5,15 +5,6 @@ class Calculator:
         """Inicializa la calculadora con una fábrica de operaciones."""
         self.operation_factory = OperationFactory()
 
-    def run(self):
-        """Inicia el ciclo de ejecución de la calculadora."""
-        while True:
-            operation = input("Ingrese la operación a realizar (e.g., '2 + 2'): ")
-            if operation.lower() == 'exit':
-                break
-            result = self.calculate(operation)
-            print(f"El resultado es: {result}")
-
     def calculate(self, operation_str):
         """Calcula el resultado de la operación ingresada por el usuario."""
         try:
