@@ -3,6 +3,8 @@ from calculator import Calculator
 
 class CalculatorApp:
     def __init__(self, root):
+        """Inicializa la aplicación de la calculadora con la ventana principal y los widgets necesarios."""
+
         self.root = root
         self.root.title("Calculadora")
         
@@ -21,6 +23,8 @@ class CalculatorApp:
         self.calculate_button.pack()
 
     def calculate(self):
+        """Obtiene la operación ingresada por el usuario y muestra el resultado en la etiqueta correspondiente."""
+        
         operation = self.entry.get()
         try:
             result = self.calculator.calculate(operation)
