@@ -57,7 +57,7 @@ class Division(Operation):
             raise ZeroDivisionError("No se puede dividir por cero")
         return self.num1 / self.num2
 
-# Patrón estructural: Factory Method
+# Patrón creacional: Factory Method
 class OperationFactory:
     def create_operation(self, operator, num1, num2):
         """Crea una instancia de la operación correspondiente según el operador dado."""
