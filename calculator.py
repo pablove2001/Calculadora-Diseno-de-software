@@ -12,8 +12,8 @@ class Calculator:
             num1 = float(parts[0])
             num2 = float(parts[2])
             operator = parts[1]
-            operation = self.operation_factory.create_operation(operator, num1, num2)
-            return operation.execute()
+            operation = self.operation_factory.create_operation(operator)
+            return operation.execute(num1, num2)
         except (ValueError, IndexError, ZeroDivisionError) as e:
             print(f"Error al calcular: {e}")
             return None
