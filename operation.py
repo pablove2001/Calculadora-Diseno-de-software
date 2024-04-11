@@ -35,7 +35,7 @@ class Division(Operation):
 
 # Patrón creacional: Factory Method
 class OperationFactory:
-    def create_operation(self, operator):
+    def get_operation_instance(self, operator):
         """Crea una instancia de la operación correspondiente según el operador dado."""
         
         if operator == '+':
